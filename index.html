@@ -1,395 +1,534 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/-of30qv - Copie.jpg" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: iPortfolio
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Updated: Jun 29 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Matéo LAPETRE-SARTHOU</title>
+    <link rel="icon" href="assets/img/-of30qv - Copie.jpg">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="index-page">
-
-<header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-        <img src="assets/img/-of30qv - Copie.jpg" alt="" class="img-fluid rounded-circle">
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="grid-overlay"></div>
+        <div class="particles"></div>
+        <div class="scan-lines"></div>
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Matéo LAPETRE-SARTHOU</h1>
-    </a>
-
-    <div class="social-links text-center">
-        <a href="https://github.com/MLSFalcon" class="bi-github"></a>
-        <a href="https://www.linkedin.com/in/mat%C3%A9o-lapetre-sarthou-6ba890342/" class="bi-linkedin"></a>
-
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-        <ul>
-            <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
-            <li><a href="#about"><i class="bi bi-person navicon"></i> A propos</a></li>
-            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
-            <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<main class="main">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="glitch" data-text="&lt;/MLS&gt;">&lt;/MLS&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#presentation" class="nav-link">Qui suis-je ?</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#outils" class="nav-link">Outils</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#bts-sio" class="nav-link">BTS SIO</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-        <img src="assets/img/Screenshot_20241129_075216_TikTok.jpg" alt="" data-aos="fade-in" class="">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <h2>Matéo LAPETRE-SARTHOU</h2>
-            <p>Je suis <span class="typed" data-typed-items="Developper, Etudiant">Developper</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">Étudiant</span>
+                <span class="line glitch" data-text="BTS SIO SLAM">BTS SIO SLAM</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Développeur passionné par le web et le logiciel</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
         </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>A propos</h2>
-            <p>Je suis une personne motivée et investie dans les différentes missions que l’on me confie. Je cherche actuellement un stage de 5 semaines ainsi qu’une alternance afin de compléter mes années en BTS SIO option SLAM.  </p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4 justify-content-center">
-                <div class="col-lg-4">
-                    <img src="assets/img/-of30qv - Copie.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-8 content">
-                    <h2>Web Developper.</h2>
-                    <p class="fst-italic py-3">
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Anniversaire:</strong> <span>28 avril 2006</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>M.LAPETRE-SARTHOU@lprs.fr</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Région:</strong> <span>Paris, ile de France</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="py-3">
-                    </p>
+        <div class="hero-visual">
+            <div class="hologram">
+                <div class="code-lines">
+                    <span>&lt;html&gt;</span>
+                    <span>&nbsp;&nbsp;&lt;body&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</span>
+                    <span>&nbsp;&nbsp;&lt;/body&gt;</span>
+                    <span>&lt;/html&gt;</span>
                 </div>
             </div>
-
         </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-                <!-- End Stats Item -->
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item">
-                        <i class="bi bi-journal-richtext"></i>
-                        <span data-purecounter-start="2" data-purecounter-end="2" data-purecounter-duration="2" class="purecounter"></span>
-                        <p><strong>Projets</strong> <span></span></p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-
-
-            </div>
-
-        </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Compétences</h2>
-            <p>Un aperçu de mes compétences techniques et des technologies que je maîtrise.</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row g-4 skills-grid">
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
-                        <h4>Langages</h4>
-                        <div class="skill-tags">
-                            <span>PHP</span><span>Java</span><span>HTML5</span><span>CSS3</span>
-                            <span>JavaScript</span><span>Python</span><span>SQL</span><span>MariaDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-stack"></i></div>
-                        <h4>Frameworks & Librairies</h4>
-                        <div class="skill-tags">
-                            <span>Symfony</span><span>Bootstrap</span><span>jQuery</span><span>JavaFX</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-database"></i></div>
-                        <h4>Bases de données & IDE</h4>
-                        <div class="skill-tags">
-                            <span>MySQL</span><span>MariaDB</span><span>Suite JetBrains</span><span>IDLE</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-hdd-network"></i></div>
-                        <h4>Systèmes & Réseau</h4>
-                        <div class="skill-tags">
-                            <span>Windows 7/10</span><span>NTFS</span><span>Apache</span>
-                            <span>Cisco</span><span>VMware</span><span>HyperV</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-briefcase"></i></div>
-                        <h4>Logiciels</h4>
-                        <div class="skill-tags">
-                            <span>Word</span><span>Excel</span><span>PowerPoint</span>
-                            <span>Access</span><span>Visio</span><span>FrontPage</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="skill-card">
-                        <div class="skill-icon"><i class="bi bi-envelope-at"></i></div>
-                        <h4>Messagerie</h4>
-                        <div class="skill-tags">
-                            <span>Outlook</span><span>Thunderbird</span><span>Paramétrage</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>CV</h2>
-            <p></p>
-        </div><!-- End Section Title -->
-
+    <!-- Présentation Section -->
+    <section id="presentation" class="presentation">
         <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) :</h4>
-                        <p><em>Lycée Robert Schuman à Dugny.</em></p>
-
-                    </div><!-- Edn Resume Item -->
-
-                    <div class="resume-item">
-                        <h4>BAC Professionnel filière SN (Système numérique) option RISC (Réseaux Informatiques et Systèmes Communicants)</h4>
-                        <p><em>Lycée Robert Schuman à Dugny, obtention du bac professionnel avec mention très bien.</em></p>
-                    </div><!-- Edn Resume Item -->
-
-                </div>
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Stage réalisé à l’étranger avec ERASMUS chez CY4 :</h4>
-                        <h5>Novembre-Décembre 2023</h5>
-                        <ul>
-                            <li>Gestion d’un parc informatique</li>
-                            <li>Brute forcing de téléphone grâce à un logiciel</li>
-                        </ul>
-                    </div><!-- Edn Resume Item -->
-
-                    <div class="resume-item">
-                        <h4>Stage réalisé chez DASSAULT FALCON SERVICE :</h4>
-                        <h5>Janvier-Février 2023</h5>
-                        <ul>
-                            <li>Réalisation de Switching</li>
-                        </ul>
-                    </div><!-- Edn Resume Item -->
-                    <div class="resume-item">
-                        <h4>Stage réalisé chez la CNAV :</h4>
-                        <h5>Mai-juin 2022</h5>
-                        <ul>
-                            <li>Gestion d’un parc informatique</li>
-                            <li>Masterisation de poste informatique</li>
-                        </ul>
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                Qui suis-je ?
+            </h2>
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <p>
+                        Salut ! Je suis Matéo LAPETRE-SARTHOU, étudiant en BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) au Lycée Robert Schuman à Dugny.
+                        Passionné par le développement et les nouvelles technologies, je conçois et développe des applications web et logicielles à travers mes différents projets scolaires et personnels.
+                        Motivé et investi dans les missions qu'on me confie, je suis actuellement à la recherche d'un stage de 5 semaines ainsi que d'une alternance pour compléter mes années de formation et continuer à progresser dans un environnement technique stimulant.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Années de formation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
                     </div>
-
                 </div>
-
+                <div class="presentation-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder" style="background-image: url('assets/img/-of30qv - Copie.jpg'); background-size: cover; background-position: center;">
+                            <div class="avatar-glow"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p></p>
-        </div><!-- End Section Title -->
-
+    <!-- Compétences Section -->
+    <section id="competences" class="competences">
         <div class="container">
-
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Site</li>
-                </ul><!-- End Portfolio Filters -->
-
-                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <div class="portfolio-content h-100">
-                            <img src="assets/img/portfolio/MNRT.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>MNRT Cinema</h4>
-                                <p>Site de gestion d'un cinema</p>
-                                <a href="assets/img/portfolio/MNRT.jpg" title="MNRT Cinema" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                <a href="https://github.com/MLSFalcon/Projet_Cinema" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Compétences
+            </h2>
+            <div class="competences-grid">
+                <div class="skill-category">
+                    <h3>Développement</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                        <div class="portfolio-content h-100">
-                            <img src="assets/img/portfolio/areo.png" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Aréoport</h4>
-                                <p>Site de gestion d'un aréoport</p>
-                                <a href="assets/img/portfolio/areo.png" title="Areoport" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                <a href="https://github.com/MLSFalcon/Symfony_areo" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
                             </div>
                         </div>
-                    </div><!-- End Portfolio Item -->
-
-
-                </div><!-- End Portfolio Container -->
-
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Symfony</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaFX</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">jQuery</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Données & Système</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MariaDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Virtualisation (VMware / HyperV)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
+    <!-- Outils Section -->
+    <section id="outils" class="outils">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Outils & Technologies
+            </h2>
+            <div class="outils-grid">
+                <div class="outil-category">
+                    <h3>Développement</h3>
+                    <div class="outils-list">
+                        <div class="outil-item">
+                            <span class="outil-name">Suite JetBrains</span>
+                            <span class="outil-desc">IDE principal (PhpStorm, IntelliJ)</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">IDLE</span>
+                            <span class="outil-desc">IDE Python</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">Git / GitHub</span>
+                            <span class="outil-desc">Gestion de versions</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="outil-category">
+                    <h3>Systèmes & Réseau</h3>
+                    <div class="outils-list">
+                        <div class="outil-item">
+                            <span class="outil-name">Windows 7 / 10</span>
+                            <span class="outil-desc">Droits NTFS, Base de Registre, DOS</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">Apache</span>
+                            <span class="outil-desc">Serveur web</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">Cisco / 3com</span>
+                            <span class="outil-desc">Paramétrage switch, adressage IP</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">VMware / HyperV</span>
+                            <span class="outil-desc">Virtualisation</span>
+                        </div>
+                    </div>
+                </div>
 
-
-</main>
-
-<footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-        <div class="copyright text-center ">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+                <div class="outil-category">
+                    <h3>Bureautique</h3>
+                    <div class="outils-list">
+                        <div class="outil-item">
+                            <span class="outil-name">Pack Office</span>
+                            <span class="outil-desc">Word, Excel, PowerPoint, Access, Visio</span>
+                        </div>
+                        <div class="outil-item">
+                            <span class="outil-name">Outlook / Thunderbird</span>
+                            <span class="outil-desc">Messagerie & paramétrage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Projets
+            </h2>
+            <div class="projets-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/img/portfolio/MNRT.jpg'); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MLSFalcon/Projet_Cinema" class="project-link">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MNRT Cinéma</h3>
+                        <p>Site web de gestion d'un cinéma : gestion des séances, des films et des réservations.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>HTML/CSS/JS</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/img/portfolio/areo.png'); background-size: cover; background-position: center;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/MLSFalcon/Symfony_areo" class="project-link">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aéroport</h3>
+                        <p>Site web réalisé avec Symfony pour la gestion d'un aéroport, des vols et des employés.</p>
+                        <div class="project-tech">
+                            <span>Symfony</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Twig</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-</footer>
+    <!-- BTS SIO Section -->
+    <section id="bts-sio" class="bts-sio">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                Qu'est-ce que le BTS SIO ?
+            </h2>
+            <div class="bts-content">
+                <div class="bts-intro">
+                    <p>
+                        Le <strong>BTS SIO (Services Informatiques aux Organisations)</strong> est une formation de niveau Bac+2
+                        qui prépare aux métiers de l'informatique dans les entreprises. Cette formation propose deux spécialisations
+                        complémentaires selon les besoins du marché.
+                    </p>
+                </div>
+                <div class="bts-options">
+                    <div class="option-card active">
+                        <h3>SLAM</h3>
+                        <h4>Solutions Logicielles et Applications Métiers</h4>
+                        <p>
+                            Spécialisation dans le <strong>développement d'applications</strong> : conception, programmation,
+                            maintenance et évolution des logiciels. Focus sur les langages de programmation, frameworks
+                            et bases de données.
+                        </p>
+                        <div class="option-skills">
+                            <span>Développement Web</span>
+                            <span>Applications Desktop</span>
+                            <span>Bases de Données</span>
+                            <span>Frameworks</span>
+                        </div>
+                    </div>
+                    <div class="option-card">
+                        <h3>SISR</h3>
+                        <h4>Solutions d'Infrastructure, Systèmes et Réseaux</h4>
+                        <p>
+                            Spécialisation dans l'<strong>administration des systèmes et réseaux</strong> : installation,
+                            configuration, sécurisation et maintenance des infrastructures informatiques.
+                        </p>
+                        <div class="option-skills">
+                            <span>Administration Système</span>
+                            <span>Réseaux</span>
+                            <span>Cybersécurité</span>
+                            <span>Virtualisation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bts-competences">
+                    <h3>Compétences développées</h3>
+                    <div class="competences-bts">
+                        <div class="competence-bts">
+                            <h4>Analyse et conception</h4>
+                            <p>Analyser les besoins, concevoir des solutions techniques adaptées</p>
+                        </div>
+                        <div class="competence-bts">
+                            <h4>Développement et intégration</h4>
+                            <p>Développer, tester et intégrer des solutions logicielles</p>
+                        </div>
+                        <div class="competence-bts">
+                            <h4>Gestion de projet</h4>
+                            <p>Planifier, organiser et suivre des projets informatiques</p>
+                        </div>
+                        <div class="competence-bts">
+                            <h4>Communication</h4>
+                            <p>Communiquer avec les utilisateurs et l'équipe technique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Veille Technologique Section -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span>
+                Veille Technologique
+            </h2>
+            <div class="veille-intro">
+                <p>
+                    La veille technologique est essentielle dans le domaine informatique pour rester à jour
+                    sur les dernières innovations, tendances et bonnes pratiques. Voici mes domaines de veille
+                    et les sources que j'utilise régulièrement.
+                </p>
+            </div>
+            <div class="veille-domains">
+                <div class="domain-card">
+                    <h3>Cybersécurité</h3>
+                    <p>Suivi des vulnérabilités et bonnes pratiques pour sécuriser les applications web et logicielles.</p>
+                    <div class="domain-sources">
+                        <span>OWASP</span>
+                        <span>CERT-FR</span>
+                        <span>ZATAZ</span>
+                    </div>
+                </div>
+                <div class="domain-card">
+                    <h3>Développement Web</h3>
+                    <p>Actualités sur les frameworks, langages et tendances du développement web moderne.</p>
+                    <div class="domain-sources">
+                        <span>Developpez.com</span>
+                        <span>MDN Web Docs</span>
+                        <span>Grafikart</span>
+                    </div>
+                </div>
+                <div class="domain-card">
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Veille sur l'évolution de l'IA, du machine learning et de ses applications concrètes.</p>
+                    <div class="domain-sources">
+                        <span>Le Big Data</span>
+                        <span>Numerama</span>
+                        <span>InfoQ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="veille-tools">
+                <h3>Outils de veille utilisés</h3>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <h4>Feedly</h4>
+                        <p>Agrégateur RSS pour centraliser les sources</p>
+                    </div>
+                    <div class="tool-item">
+                        <h4>Twitter / X</h4>
+                        <p>Suivi des experts et communautés tech</p>
+                    </div>
+                    <div class="tool-item">
+                        <h4>GitHub</h4>
+                        <p>Découverte de projets open source</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Preloader -->
-<div id="preloader"></div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">07.</span>
+                Contact
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Étudiant en BTS SIO SLAM recherchant activement un <strong>stage</strong> et une <strong>alternance</strong>
+                        en développement logiciel. Disponible pour échanger sur des opportunités professionnelles
+                        ou des projets collaboratifs.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <span class="contact-value">M.LAPETRE-SARTHOU@lprs.fr</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Formation:</span>
+                            <span class="contact-value">BTS SIO SLAM</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Localisation:</span>
+                            <span class="contact-value">Paris, Île-de-France</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Recherche:</span>
+                            <span class="contact-value">Stage / Alternance Développeur</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Matéo LAPETRE-SARTHOU - Portfolio BTS SIO SLAM</p>
+            <div class="social-links">
+                <a href="https://github.com/MLSFalcon" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/mat%C3%A9o-lapetre-sarthou-6ba890342/" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
