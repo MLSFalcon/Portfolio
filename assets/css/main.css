@@ -645,34 +645,12 @@ section {
     border-color: var(--neon-cyan);
 }
 
-.project-image {
-    height: 200px;
-    background: var(--gradient-glow);
-    position: relative;
-    overflow: hidden;
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
+.project-image { display: none; }
 
 .project-links {
     display: flex;
     gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
 }
 
 .project-link {
